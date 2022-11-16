@@ -39,5 +39,9 @@ jobs:
 
       - name: Terraform Apply
         run: terraform apply -auto-approve -lock=false
+      
+      - name: State file
+        run: terraform state push errored.tfstate
+        
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
