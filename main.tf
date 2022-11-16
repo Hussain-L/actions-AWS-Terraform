@@ -5,6 +5,9 @@ terraform {
     }
   }
 }
+provider "aws" {
+  region  = "ap-south-1"
+}
 
 resource "aws_instance" "myFirstInstance" {
   ami           = "ami-0b9064170e32bde34"
