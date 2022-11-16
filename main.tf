@@ -1,7 +1,9 @@
 terraform {
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
+  cloud {
+    organization = "hussain-l"
+
+    workspaces {
+      name = "github-actions-aws"
     }
   }
 }
