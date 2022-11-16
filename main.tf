@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "myFirstInstance" {
-  ami           = "ami-0b9064170e32bde34"
+  ami           = "ami-024c319d5d14b463e"
   instance_type = "t2.micro"
   tags= {
     Name = "github-actions"
