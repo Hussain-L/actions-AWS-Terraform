@@ -38,6 +38,6 @@ jobs:
         run: exit 1
 
       - name: Terraform Apply
-        run: terraform apply -auto-approve
+        run: terraform apply -auto-approve -lock=false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
